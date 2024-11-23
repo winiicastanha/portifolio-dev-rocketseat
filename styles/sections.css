@@ -3,9 +3,6 @@
   background-image: url(../assets/images/Background_Intro.png);
   background-size: cover;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   &>div{
     display: flex;
@@ -31,10 +28,6 @@
     strong{
       font: var(--subtitle);
       color: var(--red);
-    }
-
-    p{
-      font: var(--text-sm);
     }
 
   }
@@ -65,9 +58,6 @@
 #projects{
   height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
 
   h3{
@@ -85,6 +75,7 @@
     row-gap: 24px;
     align-items: center;
     justify-content: center;
+    text-align: start;
   }
 
   .card{
@@ -107,7 +98,6 @@
       font: var(--title-sm);
     }
     p{
-      font: var(--text-sm);
       color: var(--gray-500);
       margin-top: 8px;
     }
@@ -115,6 +105,86 @@
   .card:hover{
     border: 1.5px solid var(--gray-400);
     transition: 0.5s;
+  }
+
+}
+
+#services{
+  height: 60vh;
+  background-color: var(--gray-100);
+
+
+  h3{
+    color: var(--red);
+    margin-bottom: 8px;
+  }
+  h2{
+    margin-bottom: 56px;
+  }
+
+  .service-card{
+    width: 280px;
+    height: 155px;
+    padding: 20px;
+    border: 2px solid var(--gray-200);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    img{
+      width: 48px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    span{
+      font: var(--title-sm);
+      margin-bottom: 4px
+    };
+
+  }
+}
+
+#contact{
+  height: 100vh;
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-size: cover;
+
+  h3{
+    color: var(--purple);
+  }
+  p{
+    font: var(--text-md);
+    color: var(--gray-500);
+  }
+
+  .card-social{
+    margin-top: 48px;
+    display: grid;
+    gap: 16px;
+  }
+
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    padding: 20px;
+    background-color: var(--gray-300);
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    position: relative;
+  }
+  a:hover{
+    border-color: var(--blue);
+    img {
+      filter: invert(60%) sepia(34%) saturate(542%) hue-rotate(176deg) brightness(94%) contrast(88%);
+    }
+  }
+  img:nth-child(2){
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
   }
 
 }

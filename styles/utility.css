@@ -4,3 +4,6 @@
 .grid-flow-col{
   grid-auto-flow: column;
 }
+.gap-24{
+  gap: 24px;
+}
